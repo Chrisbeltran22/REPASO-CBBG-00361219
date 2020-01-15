@@ -17,6 +17,8 @@ int main(void){
     word = new char[size];
     aux = new char[size];
 	
+	cout << "Digite la palabra: ";
+
 	for (int i = 0; i <size; i++){
 		cin >> saveLetter;
 		word[i] = saveLetter;
