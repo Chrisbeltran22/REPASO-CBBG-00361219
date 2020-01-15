@@ -69,7 +69,7 @@ bool hasLetter(char letter, char* array1, char* array2, int sizeArray){
 	bool flag = false;
 	for (int i = 0; i < 9; i++){
 		if (array1[i] == letter){
-			flag == true;
+			flag = true;
 			array2[i] = letter;
 		}
 	}
@@ -77,7 +77,7 @@ bool hasLetter(char letter, char* array1, char* array2, int sizeArray){
 }
 
 bool compareArrays(char* array1, char* array2, int sizeArray){
-	for (int i = 0; i < 9; i++){
+	for (int i = 0; i < sizeArray; i++){
 		if (array1[i] != array2[i]){
 			return false;
 		}
